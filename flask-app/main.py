@@ -15,11 +15,9 @@ blog_post = {
 
 # Função para simular teste de carga no servidor
 def simulate_high_resource_utilization():
-    while True:
-        random_string = ''.join(random.choices(string.ascii_lowercase + string.digits, k=100000))
-        random_string.upper()
-
-        time.sleep(0.2)
+    random_string = ''.join(random.choices(string.ascii_lowercase + string.digits, k=100000))
+    random_string.upper()
+    time.sleep(0.2)
 
 
 ######################################################
