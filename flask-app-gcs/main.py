@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 from google.cloud import storage
 import requests
 
-BUCKET_NAME = os.getenv("BUCKET_NAME")
+BUCKET_NAME = os.environ.get("BUCKET_NAME")
 
 
 # Inicia o objeto do framework Flask para construção da página Web
